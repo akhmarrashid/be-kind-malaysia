@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Request Aid — Be Kind Malaysia</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <div class="brand-logo-wrap">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"/></svg>
+          </div>
+          <div>
+            <span class="brand-text-main">Be Kind Malaysia</span>
+            <span class="brand-text-sub">BeKind MY</span>
+          </div>
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+            <li class="nav-item"><a class="nav-link" href="campaigns.html">Campaigns</a></li>
+            <li class="nav-item"><a class="nav-link" href="get-involved.html">Get Involved</a></li>
+            <li class="nav-item"><a class="nav-link active" href="aid-request.html">Aid Request</a></li>
+            <li class="nav-item ms-lg-2"><a class="nav-link btn-donate-nav" href="get-involved.html#donate">Donate Now</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="section-pad-sm bg-light-custom border-bottom">
+      <div class="container text-center">
+        <span class="section-label justify-content-center">Bantuan Kemanusiaan</span>
+        <h1 class="fw-bold mb-2">Apply for Aid</h1>
+        <p class="section-desc mx-auto">If you or someone you know is facing hardships, please fill out the verified application framework below. Our volunteer networks will review files confidentially.</p>
+      </div>
+    </section>
+
+    <section class="section-pad">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="card border-0 shadow-md p-4 p-md-5" style="border-radius: var(--radius-lg); background: var(--card-bg);">
+              
+              <form id="aidForm" class="needs-validation" novalidate>
+                
+                <h3 class="mb-4 text-primary-custom fw-bold" style="font-family: var(--font-head);">Applicant Details</h3>
+                
+                <div class="mb-3">
+                  <label for="fullName" class="form-label fw-semibold">Full Name (As per IC)</label>
+                  <input type="text" class="form-control shadow-none border" id="fullName" required style="border-radius: 8px; padding: 0.65rem;">
+                  <div class="invalid-feedback">Please enter your full name.</div>
+                </div>
+
+                <div class="row g-3 mb-3">
+                  <div class="col-md-6">
+                    <label for="icNumber" class="form-label fw-semibold">IC Number</label>
+                    <input type="text" class="form-control shadow-none border" id="icNumber" placeholder="e.g., 900101145522" required style="border-radius: 8px; padding: 0.65rem;">
+                    <div class="invalid-feedback">Please enter a valid 12-digit IC number.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="phoneNum" class="form-label fw-semibold">Phone Number</label>
+                    <input type="tel" class="form-control shadow-none border" id="phoneNum" placeholder="e.g., 0123456789" required style="border-radius: 8px; padding: 0.65rem;">
+                    <div class="invalid-feedback">Please enter a valid contact number.</div>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="address" class="form-label fw-semibold">Home Address</label>
+                  <textarea class="form-control shadow-none border" id="address" rows="3" required style="border-radius: 8px;"></textarea>
+                  <div class="invalid-feedback">Please provide your current living address.</div>
+                </div>
+
+                <div class="row g-3 mb-4">
+                  <div class="col-md-6">
+                    <label for="stateSelect" class="form-label fw-semibold">State</label>
+                    <select class="form-select shadow-none border" id="stateSelect" required style="border-radius: 8px; padding: 0.65rem;">
+                      <option value="" selected disabled>Choose State...</option>
+                      <option value="Selangor">Selangor</option>
+                      <option value="Kuala Lumpur">Kuala Lumpur</option>
+                      <option value="Johor">Johor</option>
+                      <option value="Pahang">Pahang</option>
+                      <option value="Perak">Perak</option>
+                      <option value="Penang">Penang</option>
+                      <option value="Others">Other State</option>
+                    </select>
+                    <div class="invalid-feedback">Please select your state.</div>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="aidCategory" class="form-label fw-semibold">Required Aid Type</label>
+                    <select class="form-select shadow-none border" id="aidCategory" required style="border-radius: 8px; padding: 0.65rem;">
+                      <option value="" selected disabled>Select program...</option>
+                      <option value="food">Food Kit Support (B40 Household)</option>
+                      <option value="cancer">Cancer Medical Aid Outpatients</option>
+                      <option value="oku">OKU Support / Mobility Gear</option>
+                      <option value="flood">Emergency Flood Relief</option>
+                    </select>
+                    <div class="invalid-feedback">Please select an aid category.</div>
+                  </div>
+                </div>
+
+                <hr class="my-4 border-top" style="opacity: 0.1;">
+
+                <h3 class="mb-3 text-primary-custom fw-bold" style="font-family: var(--font-head);">Situation Statement</h3>
+                <div class="mb-4">
+                  <label for="justification" class="form-label fw-semibold">Briefly explain your current condition</label>
+                  <textarea class="form-control shadow-none border" id="justification" rows="4" placeholder="Please mention monthly income indicators, family dependants, or dynamic health conditions..." required style="border-radius: 8px;"></textarea>
+                  <div class="invalid-feedback">Please share some context to help our verification process.</div>
+                </div>
+
+                <button type="submit" class="btn-primary-custom w-100 text-center py-3 fs-6 border-0" style="border-radius: 10px;">Submit Secure Request</button>
+              </form>
+
+              <div id="successBox" class="text-center d-none py-4">
+                <span style="font-size: 4rem;">💚</span>
+                <h2 class="fw-bold mt-3 text-primary-custom" style="font-family: var(--font-head);">Application Logged Successfully</h2>
+                <p class="text-muted mt-2">Terima kasih. Your application has been encrypted and securely passed onto localized Be Kind Malaysia district coordinators. We will touch base within 3–5 operational cycles.</p>
+                <a href="index.html" class="btn btn-outline-success mt-3 px-4 rounded-3">Return to Home</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <hr class="footer-divider" style="margin-top: 0;" />
+        <div class="footer-bottom">
+          <span>&copy; 2024 Be Kind Malaysia. All rights reserved.</span>
+          <span>Developed for ISP465 — Introduction to Front-End Web Development</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
