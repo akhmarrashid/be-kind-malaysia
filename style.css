@@ -712,17 +712,6 @@ img { max-width: 100%; height: auto; }
   margin-bottom: 1.2rem;
 }
 
-.footer-links { list-style: none; padding: 0; }
-.footer-links li { margin-bottom: 0.6rem; }
-
-.footer-links a {
-  font-size: 0.875rem;
-  color: rgba(255,255,255,0.65);
-  transition: color var(--transition);
-}
-
-.footer-links a:hover { color: var(--accent); }
-
 .footer-contact-item {
   display: flex;
   align-items: flex-start;

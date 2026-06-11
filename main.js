@@ -81,31 +81,31 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   /* ----------------------------------------------------------
-     5. AID APPLICATION FORM VALIDATION
+     5. FORM VALIDATION (FOR AID REQUEST & VOLUNTEER FORMS)
   ---------------------------------------------------------- */
   const aidForm = document.getElementById('aidForm');
   const successBox = document.getElementById('successBox');
 
   if (aidForm && successBox) {
     aidForm.addEventListener('submit', function (event) {
-      // Prevent default network shipping actions
+      // Prevent the page from reloading automatically      
       event.preventDefault();
       event.stopPropagation();
 
+      // If all inputs match the required fields
       if (aidForm.checkValidity()) {
-        // Form is structurally valid! Run front-end animations
-        aidForm.classList.add('d-none'); // Hide input fields
-        successBox.classList.remove('d-none'); // Reveal the dynamic success confirmation
+        aidForm.classList.add('d-none'); // Hide the form
+        successBox.classList.remove('d-none'); // Show success message
         window.scrollTo({ top: successBox.offsetTop - 100, behavior: 'smooth' });
       } else {
-        // Bootstrap standard input indicator highlights
+        // Show Bootstrap validation red/green styles
         aidForm.classList.add('was-validated');
       }
     }, false);
   };
 
   /* ----------------------------------------------------------
-     6. PORTFOLIO CARDS FILTERING ENGINE
+     6. CAMPAIGN CARDS FILTERING LOGIC
   ---------------------------------------------------------- */
   const filterButtons = document.querySelectorAll('.filter-btn');
   const portfolioItems = document.querySelectorAll('.portfolio-item');
@@ -113,13 +113,13 @@ document.addEventListener('DOMContentLoaded', function () {
   if (filterButtons.length > 0 && portfolioItems.length > 0) {
     filterButtons.forEach(button => {
       button.addEventListener('click', () => {
-        // Toggle Active Button Class Style
+        // Remove active color from all buttons, then add to clicked button
         filterButtons.forEach(btn => btn.classList.remove('active'));
         button.classList.add('active');
 
         const selectedFilter = button.getAttribute('data-filter');
 
-        // Loop cards and apply conditional visibility transitions
+        // Show or hide cards based on the selected category
         portfolioItems.forEach(item => {
           const itemCategory = item.getAttribute('data-category');
           if (selectedFilter === 'all' || itemCategory === selectedFilter) {
