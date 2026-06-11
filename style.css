@@ -75,22 +75,6 @@ img { max-width: 100%; height: auto; }
   gap: 10px;
 }
 
-.brand-logo-wrap {
-  width: 42px;
-  height: 42px;
-  background: var(--primary);
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.brand-logo-wrap svg {
-  width: 24px;
-  height: 24px;
-  fill: white;
-}
-
 .brand-text-main {
   font-family: var(--font-head);
   font-size: 1.15rem;
