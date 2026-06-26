@@ -1,16 +1,10 @@
-/* ============================================================
-   BeKind Malaysia — Custom Stylesheet
-   Author: ISP465 Group Project
-   ============================================================ */
-
-/* --- Google Fonts --- */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
 
 /* --- CSS Variables --- */
 :root {
-  --primary:     #1B6B3A;   /* deep forest green */
-  --primary-lt:  #2E8B57;   /* medium green */
-  --accent:      #F5A623;   /* warm amber/gold */
+  --primary:     #1B6B3A;
+  --primary-lt:  #2E8B57;
+  --accent:      #F5A623;
   --accent-lt:   #FBBF24;
   --dark:        #0F2318;
   --light-bg:    #F7FBF8;
@@ -124,9 +118,6 @@ img { max-width: 100%; height: auto; }
   box-shadow: 0 4px 16px rgba(27,107,58,0.3);
 }
 
-/* ============================================================
-   HERO / CAROUSEL
-   ============================================================ */
 .hero-carousel {
   position: relative;
   overflow: hidden;
@@ -267,9 +258,6 @@ img { max-width: 100%; height: auto; }
   border-radius: 4px;
 }
 
-/* ============================================================
-   STATS STRIP
-   ============================================================ */
 .stats-strip {
   background: var(--primary);
   padding: 2rem 0;
@@ -302,9 +290,6 @@ img { max-width: 100%; height: auto; }
   display: block;
 }
 
-/* ============================================================
-   SECTION COMMONS
-   ============================================================ */
 .section-pad { padding: 5rem 0; }
 .section-pad-sm { padding: 3rem 0; }
 
@@ -342,9 +327,6 @@ img { max-width: 100%; height: auto; }
   font-weight: 400;
 }
 
-/* ============================================================
-   MISSION HIGHLIGHTS
-   ============================================================ */
 .mission-section {
   background: var(--light-bg);
 }
@@ -411,9 +393,6 @@ img { max-width: 100%; height: auto; }
   line-height: 1.65;
 }
 
-/* ============================================================
-   CAMPAIGNS PREVIEW
-   ============================================================ */
 .campaign-card {
   background: var(--white);
   border-radius: var(--radius-lg);
@@ -498,9 +477,6 @@ img { max-width: 100%; height: auto; }
   flex-shrink: 0;
 }
 
-/* ============================================================
-   IMPACT / ABOUT STRIP
-   ============================================================ */
 .about-strip {
   background: var(--dark);
   color: white;
@@ -594,9 +570,6 @@ img { max-width: 100%; height: auto; }
   object-fit: cover;
 }
 
-/* ============================================================
-   CALL TO ACTION
-   ============================================================ */
 .cta-section {
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-lt) 100%);
   padding: 4rem 0;
@@ -667,9 +640,6 @@ img { max-width: 100%; height: auto; }
   color: white;
 }
 
-/* ============================================================
-   FOOTER
-   ============================================================ */
 .footer {
   background: var(--dark);
   color: rgba(255,255,255,0.75);
@@ -758,9 +728,6 @@ img { max-width: 100%; height: auto; }
   fill: currentColor;
 }
 
-/* ============================================================
-   ANIMATIONS
-   ============================================================ */
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(24px); }
   to   { opacity: 1; transform: translateY(0); }
@@ -776,7 +743,6 @@ img { max-width: 100%; height: auto; }
 .fade-up-3 { animation-delay: 0.3s; }
 .fade-up-4 { animation-delay: 0.4s; }
 
-/* Intersection-observer driven reveal */
 .reveal {
   opacity: 0;
   transform: translateY(30px);
@@ -788,9 +754,6 @@ img { max-width: 100%; height: auto; }
   transform: none;
 }
 
-/* ============================================================
-   UTILITIES
-   ============================================================ */
 .text-primary-custom { color: var(--primary) !important; }
 .text-accent         { color: var(--accent) !important; }
 .bg-light-custom     { background: var(--light-bg); }
@@ -848,9 +811,7 @@ img { max-width: 100%; height: auto; }
   display: none !important;
 }
 
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
+/*RESPONSIVE*/
 @media (max-width: 991px) {
   .navbar-collapse {
     background: white;
