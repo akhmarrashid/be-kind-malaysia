@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
-  /* ----------------------------------------------------------
-     1. NAVBAR: Add scrolled class on scroll
-  ---------------------------------------------------------- */
+  /* 1. NAVBAR: Add scrolled class on scroll */
   const navbar = document.querySelector('.navbar');
   if (navbar) {
     window.addEventListener('scroll', () => {
@@ -10,10 +8,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  /* ----------------------------------------------------------
-     2. ANIMATED STATS COUNTER
-     Triggered once when stats strip enters viewport
-  ---------------------------------------------------------- */
+  /* 2. ANIMATED STATS COUNTER
+     Triggered once when stats strip enters viewport */
   const counters = document.querySelectorAll('[data-count]');
 
   const countUp = (el) => {
@@ -50,10 +46,8 @@ document.addEventListener('DOMContentLoaded', function () {
     if (statsStrip) statsObserver.observe(statsStrip);
   }
 
-  /* ----------------------------------------------------------
-     3. SCROLL REVEAL
-     Adds .visible class to elements with .reveal class
-  ---------------------------------------------------------- */
+  /* 3. SCROLL REVEAL
+     Adds .visible class to elements with .reveal class*/
   const revealEls = document.querySelectorAll('.reveal');
 
   if (revealEls.length > 0) {
@@ -69,9 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
     revealEls.forEach(el => revealObserver.observe(el));
   }
 
-  /* ----------------------------------------------------------
-     4. ACTIVE NAV LINK (highlight current page)
-  ---------------------------------------------------------- */
+  /* 4. ACTIVE NAV LINK (highlight current page) */
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-link').forEach(link => {
     const href = link.getAttribute('href');
@@ -80,9 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  /* ----------------------------------------------------------
-     5. FORM VALIDATION (FOR AID REQUEST & VOLUNTEER FORMS)
-  ---------------------------------------------------------- */
+  /* 5. FORM VALIDATION (FOR AID REQUEST & VOLUNTEER FORMS)*/
   const aidForm = document.getElementById('aidForm');
   const successBox = document.getElementById('successBox');
 
@@ -104,9 +94,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }, false);
   };
 
-  /* ----------------------------------------------------------
-     6. CAMPAIGN CARDS FILTERING LOGIC
-  ---------------------------------------------------------- */
+  /* 6. CAMPAIGN CARDS FILTERING LOGIC */
   const filterButtons = document.querySelectorAll('.filter-btn');
   const portfolioItems = document.querySelectorAll('.portfolio-item');
 
@@ -130,5 +118,29 @@ document.addEventListener('DOMContentLoaded', function () {
         });
       });
     });
+  }
+
+  const feedbackForm = document.getElementById('feedbackForm');
+  const feedbackSuccessBox = document.getElementById('feedbackSuccessBox');
+
+  if (feedbackForm) {
+    feedbackForm.addEventListener('submit', function (event) {
+      if (!feedbackForm.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      } else {
+        event.preventDefault();
+        
+        feedbackForm.classList.add('d-none');
+        
+        feedbackSuccessBox.classList.remove('d-none');
+      
+        feedbackForm.reset();
+        feedbackForm.classList.remove('was-validated');
+        return;
+      }
+
+      feedbackForm.classList.add('was-validated');
+    }, false);
   }
 });
