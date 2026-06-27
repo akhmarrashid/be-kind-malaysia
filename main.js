@@ -1,5 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+  /*LUCIDE ICONS RENDERING*/
+  if (typeof lucide !== 'undefined') {
+    lucide.createIcons();
+  }
+
   /* 1. NAVBAR: Add scrolled class on scroll */
   const navbar = document.querySelector('.navbar');
   if (navbar) {
@@ -72,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-  /* 5. FORM VALIDATION (FOR AID REQUEST & VOLUNTEER FORMS)*/
+  /* 5. FORM VALIDATION (FOR AID REQUEST) */
   const aidForm = document.getElementById('aidForm');
   const successBox = document.getElementById('successBox');
 
@@ -120,27 +125,25 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  /* 7. FORM VALIDATION (FOR FEEDBACK FORM) */
   const feedbackForm = document.getElementById('feedbackForm');
   const feedbackSuccessBox = document.getElementById('feedbackSuccessBox');
 
-  if (feedbackForm) {
+  if (feedbackForm && feedbackSuccessBox) {
     feedbackForm.addEventListener('submit', function (event) {
-      if (!feedbackForm.checkValidity()) {
-        event.preventDefault();
-        event.stopPropagation();
-      } else {
-        event.preventDefault();
-        
+      event.preventDefault();
+      event.stopPropagation();
+
+      if (feedbackForm.checkValidity()) {
         feedbackForm.classList.add('d-none');
-        
         feedbackSuccessBox.classList.remove('d-none');
-      
+        window.scrollTo({ top: feedbackSuccessBox.offsetTop - 100, behavior: 'smooth' });
+        
         feedbackForm.reset();
         feedbackForm.classList.remove('was-validated');
-        return;
+      } else {
+        feedbackForm.classList.add('was-validated');
       }
-
-      feedbackForm.classList.add('was-validated');
     }, false);
   }
 });

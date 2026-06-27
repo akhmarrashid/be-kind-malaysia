@@ -42,12 +42,54 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
 }
 
-a { text-decoration: none; transition: color var(--transition); }
-img { max-width: 100%; height: auto; }
+a { 
+  text-decoration: none; 
+  transition: color var(--transition); 
+}
 
-/* ============================================================
-   NAVBAR
-   ============================================================ */
+img { 
+  max-width: 100%; 
+  height: auto; 
+}
+
+.lucide {
+  width: 24px;
+  height: 24px;
+  stroke-width: 2;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.mission-icon .lucide {
+  width: 32px;
+  height: 32px;
+  color: #004A22;
+}
+
+.card .lucide {
+  width: 36px;
+  height: 36px;
+  color: #004A22;
+}
+
+.campaign-meta .lucide {
+  margin-right: 4px;
+  margin-top: -2px;
+}
+
+#successBox .lucide {
+  width: 48px;
+  height: 48px;
+  color: #004A22;
+}
+
+#feedbackSuccessBox .lucide {
+  width: 56px;
+  height: 56px;
+  color: #004A22;
+}
+
+/* NAVBAR */
 .navbar {
   background: rgba(255,255,255,0.97) !important;
   backdrop-filter: blur(12px);
