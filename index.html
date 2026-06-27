@@ -1,607 +1,539 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Be Kind Malaysia — Humanity in Action</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Be Kind Malaysia — Humanity in Action</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/bekindlogo.png" alt="Be Kind Logo" style="height: 55px; width: auto; margin-right: 10px" />
+        </a>
 
-<body>
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">
-        <img src="images/bekindlogo.jpg" alt="Be Kind Logo" style="height: 55px; width: auto; margin-right: 10px" />
-      </a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+          aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
-        aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="campaigns.html">Campaigns</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="get-involved.html">Get Involved</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="aid-request.html">Aid Request</a>
-          </li>
-          <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
-          <li class="nav-item ms-lg-2">
-            <a class="nav-link btn-donate-nav" href="get-involved.html#donate">Donate Now</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <section class="hero-carousel">
-    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-          aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-
-      <div class="carousel-inner">
-        <!-- Slide 1 -->
-        <div class="carousel-item active">
-          <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=1400&q=80"
-            alt="Volunteers packing food kits" class="carousel-bg" />
-          <div class="carousel-caption">
-            <div class="carousel-caption-inner">
-              <span class="hero-tag fade-up fade-up-1">Food Kit Drive 2024</span>
-              <h1 class="fade-up fade-up-2">
-                Every Meal Matters.<br />Every Life Counts.
-              </h1>
-              <p class="fade-up fade-up-3">
-                Delivering essential food kits to families in need across
-                Malaysia.
-              </p>
-              <div class="hero-btn-group fade-up fade-up-4">
-                <a href="campaigns.html" class="btn-hero-primary">View Campaigns</a>
-                <a href="aid-request.html" class="btn-hero-outline">Request Aid</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 2 -->
-        <div class="carousel-item">
-          <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=1400&q=80"
-            alt="Cancer patient aid mission" class="carousel-bg" />
-          <div class="carousel-caption">
-            <div class="carousel-caption-inner">
-              <span class="hero-tag">Cancer Aid Programme</span>
-              <h1>Standing Beside<br />Cancer Fighters.</h1>
-              <p>
-                Providing financial relief and essential support to cancer
-                patients and their families throughout their journey.
-              </p>
-              <div class="hero-btn-group">
-                <a href="get-involved.html" class="btn-hero-primary">Support the Cause</a>
-                <a href="about.html" class="btn-hero-outline">Our Mission</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Slide 3 -->
-        <div class="carousel-item">
-          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=80" alt="OKU community support"
-            class="carousel-bg" />
-          <div class="carousel-caption">
-            <div class="carousel-caption-inner">
-              <span class="hero-tag">OKU Community Support</span>
-              <h1>Empowering Every<br />Ability, Every Person.</h1>
-              <p>
-                Supporting individuals with disabilities (OKU) through
-                targeted aid, equipment assistance, and community programmes.
-              </p>
-              <div class="hero-btn-group">
-                <a href="campaigns.html" class="btn-hero-primary">Explore Missions</a>
-                <a href="get-involved.html" class="btn-hero-outline">Volunteer With Us</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-  </section>
-
-  <section class="stats-strip">
-    <div class="container">
-      <div class="row g-0 justify-content-center">
-        <div class="col-6 col-md-3">
-          <div class="stat-item">
-            <span class="stat-number" data-count="1200" data-suffix="+">0</span>
-            <span class="stat-label">Families Helped</span>
-          </div>
-        </div>
-
-        <div class="col-6 col-md-3">
-          <div class="stat-item">
-            <span class="stat-number" data-count="85" data-suffix="+">0</span>
-            <span class="stat-label">Missions Completed</span>
-          </div>
-        </div>
-
-        <div class="col-6 col-md-3">
-          <div class="stat-item">
-            <span class="stat-number" data-count="320" data-suffix="+">0</span>
-            <span class="stat-label">Active Volunteers</span>
-          </div>
-        </div>
-
-        <div class="col-6 col-md-3">
-          <div class="stat-item">
-            <span class="stat-number" data-count="5" data-suffix=" States">0</span>
-            <span class="stat-label">States Reached</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--MISSION HIGHLIGHTS-->
-  <section class="mission-section section-pad">
-    <div class="container">
-      <div class="row justify-content-between align-items-end mb-5">
-        <div class="col-lg-6 reveal">
-          <span class="section-label">What We Do</span>
-          <h2 class="section-title">
-            Four Pillars of<br />Our Humanitarian Work
-          </h2>
-        </div>
-        <div class="col-lg-5 reveal">
-          <p class="section-desc">
-            Be Kind Malaysia operates through four focused programmes — each
-            targeting a specific group in need, ensuring aid reaches those who
-            need it most.
-          </p>
-        </div>
-      </div>
-
-      <div class="row g-4">
-        <!-- Card 1 -->
-        <div class="col-sm-6 col-lg-3 reveal">
-          <div class="mission-card">
-            <div class="mission-icon">
-              <span class="mi">🍚</span>
-            </div>
-            <h4>Food Kit Drive</h4>
-            <p>
-              Distributing monthly food essentials to underprivileged
-              families, ensuring no one goes to bed hungry.
-            </p>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="col-sm-6 col-lg-3 reveal">
-          <div class="mission-card">
-            <div class="mission-icon">
-              <span class="mi">🎗️</span>
-            </div>
-            <h4>Cancer Aid</h4>
-            <p>
-              Providing financial assistance and essential support to cancer
-              patients and their families throughout treatment.
-            </p>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="col-sm-6 col-lg-3 reveal">
-          <div class="mission-card">
-            <div class="mission-icon">
-              <span class="mi">♿</span>
-            </div>
-            <h4>OKU Support</h4>
-            <p>
-              Assisting individuals with disabilities through targeted aid,
-              mobility equipment, and community inclusion programmes.
-            </p>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="col-sm-6 col-lg-3 reveal">
-          <div class="mission-card">
-            <div class="mission-icon">
-              <span class="mi">🌊</span>
-            </div>
-            <h4>Flood Relief</h4>
-            <p>
-              Rapid deployment of aid packages, clean water, and volunteer
-              teams to flood-affected communities across Malaysia.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--RECENT CAMPAIGNS PREVIEW-->
-  <section class="section-pad bg-light-custom">
-    <div class="container">
-      <div class="row align-items-end mb-5">
-        <div class="col-lg-7 reveal">
-          <span class="section-label">Recent Activity</span>
-          <h2 class="section-title">Our Latest Campaigns</h2>
-          <p class="section-desc mt-2">
-            A look at our most recent missions.
-          </p>
-        </div>
-        <div class="col-lg-5 text-lg-end mt-3 mt-lg-0 reveal">
-          <a href="campaigns.html" class="btn-primary-custom">View All Campaigns →</a>
-        </div>
-      </div>
-
-      <div class="row g-4">
-        <div class="col-md-6 col-lg-4 reveal">
-          <div class="campaign-card d-flex flex-column h-100">
-            <div class="campaign-img-wrap">
-              <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&q=75"
-                alt="Food Kit Drive Selangor" loading="lazy" />
-              <span class="campaign-badge">Food Kit Drive</span>
-            </div>
-            <div class="campaign-body d-flex flex-column flex-grow-1">
-              <h5>Selangor Food Kit Distribution — October 2024</h5>
-              <p>
-                Delivered 250 food kits to underprivileged families in Klang
-                Valley, covering rice, cooking oil, canned goods, and basic
-                necessities.
-              </p>
-              <div class="campaign-meta mb-3">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-                  <line x1="16" y1="2" x2="16" y2="6" />
-                  <line x1="8" y1="2" x2="8" y2="6" />
-                  <line x1="3" y1="10" x2="21" y2="10" />
-                </svg>
-                October 12, 2024 &nbsp;·&nbsp; 250 Families Served
-              </div>
-              <div class="mt-auto pt-2">
-                <button class="btn-primary-custom w-100 text-center" data-bs-toggle="modal"
-                  data-bs-target="#campaignModal1">
-                  View Mission Details
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 reveal">
-          <div class="campaign-card d-flex flex-column h-100">
-            <div class="campaign-img-wrap">
-              <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=75"
-                alt="Cancer Aid Mission" loading="lazy" />
-              <span class="campaign-badge badge-amber">Cancer Aid</span>
-            </div>
-            <div class="campaign-body d-flex flex-column flex-grow-1">
-              <h5>Cancer Financial Aid Programme — Q3 2024</h5>
-              <p>
-                Provided financial assistance to 38 cancer patients for
-                treatment costs, transportation, and basic living expenses
-                during hospitalisation.
-              </p>
-              <div class="campaign-meta mb-3">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-                  <line x1="16" y1="2" x2="16" y2="6" />
-                  <line x1="8" y1="2" x2="8" y2="6" />
-                  <line x1="3" y1="10" x2="21" y2="10" />
-                </svg>
-                September 5, 2024 &nbsp;·&nbsp; 38 Patients Assisted
-              </div>
-              <div class="mt-auto pt-2">
-                <button class="btn-primary-custom w-100 text-center" data-bs-toggle="modal"
-                  data-bs-target="#campaignModal2">
-                  View Mission Details
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 reveal">
-          <div class="campaign-card d-flex flex-column h-100">
-            <div class="campaign-img-wrap">
-              <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=600&q=75"
-                alt="Flood Relief Pahang" loading="lazy" />
-              <span class="campaign-badge badge-teal">Flood Relief</span>
-            </div>
-            <div class="campaign-body d-flex flex-column flex-grow-1">
-              <h5>Pahang Flood Relief Mission — November 2024</h5>
-              <p>
-                Mobilised 45 volunteers to deliver emergency supply packages,
-                clean water, and hygiene kits to flood-affected families in
-                Pahang.
-              </p>
-              <div class="campaign-meta mb-3">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                  stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
-                  <line x1="16" y1="2" x2="16" y2="6" />
-                  <line x1="8" y1="2" x2="8" y2="6" />
-                  <line x1="3" y1="10" x2="21" y2="10" />
-                </svg>
-                November 3, 2024 &nbsp;·&nbsp; 120 Families Reached
-              </div>
-              <div class="mt-auto pt-2">
-                <button class="btn-primary-custom w-100 text-center" data-bs-toggle="modal"
-                  data-bs-target="#campaignModal3">
-                  View Mission Details
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="modal fade" id="campaignModal1" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content border-0 shadow-lg" style="border-radius: var(--radius-lg); overflow: hidden">
-        <div class="modal-header border-0 bg-light-custom">
-          <h5 class="modal-title fw-bold text-primary-custom" style="font-family: var(--font-head)">
-            Selangor Food Kit Distribution
-          </h5>
-          <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p>
-            Every phase of our Food Kit drive focuses on direct-to-home
-            delivery for urban poor B40 households. In October 2024, our teams
-            successfully packed, distributed, and verified dry pantry supplies
-            directly to low-cost housing schemes across Selangor.
-          </p>
-          <p class="mb-0 text-muted small">
-            <strong>Items provided:</strong> 10kg Rice, Cooking Oil, Flour,
-            Condensed Milk, Sugar, Salt, and Canned Protein.
-          </p>
-        </div>
-        <div class="modal-footer border-0">
-          <button type="button" class="btn btn-secondary rounded-3 border-0 py-2 px-3 small" data-bs-dismiss="modal">
-            Close Window
-          </button>
-          <a href="get-involved.html#donate" class="btn-cta-primary m-0 py-2 px-4 rounded-3 text-dark">Support Next
-            Drive</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="campaignModal2" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content border-0 shadow-lg" style="border-radius: var(--radius-lg); overflow: hidden">
-        <div class="modal-header border-0 bg-light-custom">
-          <h5 class="modal-title fw-bold text-primary-custom" style="font-family: var(--font-head)">
-            Cancer Financial Aid Support
-          </h5>
-          <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p>
-            Medical treatments shouldn't be cut short because of transport
-            fare or basic nutritional constraints. This quarterly framework
-            covers medical out-of-pocket gaps, chemotherapy co-pays, and
-            continuous food support for outpatients dealing with critical
-            income drops.
-          </p>
-        </div>
-        <div class="modal-footer border-0">
-          <button type="button" class="btn btn-secondary rounded-3 border-0 py-2 px-3 small" data-bs-dismiss="modal">
-            Close Window
-          </button>
-          <a href="get-involved.html#donate" class="btn-cta-primary m-0 py-2 px-4 rounded-3 text-dark">Support Oncology
-            Fund</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="campaignModal3" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content border-0 shadow-lg" style="border-radius: var(--radius-lg); overflow: hidden">
-        <div class="modal-header border-0 bg-light-custom">
-          <h5 class="modal-title fw-bold text-primary-custom" style="font-family: var(--font-head)">
-            Pahang Flood Relief Deployment
-          </h5>
-          <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p>
-            When monsoons strike, rapid logistical intervention saves lives.
-            Our localized volunteer hubs deployment team brought instant clean
-            drinking water containers, medical hygiene packs, and portable
-            cleaning gear to rural homes affected by severe flooding heights.
-          </p>
-        </div>
-        <div class="modal-footer border-0">
-          <button type="button" class="btn btn-secondary rounded-3 border-0 py-2 px-3 small" data-bs-dismiss="modal">
-            Close Window
-          </button>
-          <a href="get-involved.html#donate" class="btn-cta-primary m-0 py-2 px-4 rounded-3 text-dark">Contribute to
-            Relief</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!--ABOUT STRIP-->
-  <section class="about-strip section-pad">
-    <div class="container">
-      <div class="row align-items-center g-5">
-        <!-- Text Side -->
-        <div class="col-lg-6 reveal">
-          <span class="section-label" style="color: var(--accent)">Who We Are</span>
-          <h2 class="section-title" style="color: white">
-            A Community Built<br />on Compassion.
-          </h2>
-          <p class="section-desc mt-3" style="color: rgba(255, 255, 255, 0.7); max-width: 100%">
-            Be Kind Malaysia is a grassroots NGO committed to delivering
-            meaningful, transparent humanitarian aid to those most in need —
-            with a focus on cancer patients and individuals with disabilities.
-          </p>
-
-          <ul class="about-list mt-4">
-            <li>
-              100% volunteer-driven operations with transparent fund
-              utilisation
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
             </li>
-            <li>
-              Verified aid distribution to cancer patients and OKU individuals
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
             </li>
-            <li>Rapid response flood relief across Peninsular Malaysia</li>
-            <li>Open to CSR partnerships and corporate sponsorships</li>
+            <li class="nav-item">
+              <a class="nav-link" href="campaigns.html">Campaigns</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="get-involved.html">Get Involved</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="aid-request.html">Aid Request</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+            <li class="nav-item ms-lg-2">
+              <a class="nav-link btn-donate-nav" href="get-involved.html#donate">Donate Now</a>
+            </li>
           </ul>
-
-          <a href="about.html" class="btn-outline-light-custom">Learn More About Us →</a>
-        </div>
-
-        <!-- Image Side -->
-        <div class="col-lg-6 reveal">
-          <div class="about-img-wrap">
-            <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800&q=80"
-              alt="Be Kind Malaysia team of volunteers" loading="lazy" />
-          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </nav>
 
-  <!--CALL TO ACTION-->
-  <section class="cta-section">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 reveal">
-          <h2>You Can Make a Real Difference Today.</h2>
-          <p>
-            Whether you donate, volunteer, or simply spread the word — every
-            action helps us reach more lives across Malaysia.
-          </p>
-          <div>
-            <a href="get-involved.html#donate" class="btn-cta-primary">Donate Now</a>
-            <a href="get-involved.html#volunteer" class="btn-cta-outline">Become a Volunteer</a>
-          </div>
+    <section class="hero-carousel">
+      <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <!--FOOTER-->
-  <footer class="footer">
-    <div class="container">
-      <div class="row g-5">
-        <!-- Brand Column -->
-        <div class="col-lg-4 col-md-6">
-          <div class="footer-brand d-flex align-items-center gap-2 mb-3">
-            <div>
-              <span class="brand-text-main">Be Kind Malaysia</span>
-              <span class="brand-text-sub" style="display: block">BeKind MY</span>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=1400&q=80"
+              alt="Volunteers packing food kits" class="carousel-bg" />
+            <div class="carousel-caption">
+              <div class="carousel-caption-inner">
+                <span class="hero-tag fade-up fade-up-1">Food Kit Drive 2024</span>
+                <h1 class="fade-up fade-up-2">
+                  Every Meal Matters.<br />Every Life Counts.
+                </h1>
+                <p class="fade-up fade-up-3">
+                  Delivering essential food kits to families in need across
+                  Malaysia.
+                </p>
+                <div class="hero-btn-group fade-up fade-up-4">
+                  <a href="campaigns.html" class="btn-hero-primary">View Campaigns</a>
+                  <a href="aid-request.html" class="btn-hero-outline">Request Aid</a>
+                </div>
+              </div>
             </div>
           </div>
-          <p class="footer-desc">
-            A Malaysian NGO dedicated to delivering transparent,
-            community-driven humanitarian aid to cancer patients, OKU
-            individuals, and underprivileged communities.
-          </p>
-          <div class="footer-social mt-3">
-            <a class="social-btn" href="#" aria-label="Facebook">
-              <svg viewBox="0 0 24 24">
-                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
-              </svg>
-            </a>
-            <a class="social-btn" href="#" aria-label="Instagram">
-              <svg viewBox="0 0 24 24">
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor"
-                  stroke-width="2" />
-                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="none" stroke="currentColor"
-                  stroke-width="2" />
-                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" />
-              </svg>
-            </a>
-            <a class="social-btn" href="#" aria-label="WhatsApp">
-              <svg viewBox="0 0 24 24">
-                <path
-                  d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"
-                  fill="none" stroke="currentColor" stroke-width="2" />
-              </svg>
-            </a>
+
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=1400&q=80"
+              alt="Cancer patient aid mission" class="carousel-bg" />
+            <div class="carousel-caption">
+              <div class="carousel-caption-inner">
+                <span class="hero-tag">Cancer Aid Programme</span>
+                <h1>Standing Beside<br />Cancer Fighters.</h1>
+                <p>
+                  Providing financial relief and essential support to cancer
+                  patients and their families throughout their journey.
+                </p>
+                <div class="hero-btn-group">
+                  <a href="get-involved.html" class="btn-hero-primary">Support the Cause</a>
+                  <a href="about.html" class="btn-hero-outline">Our Mission</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1400&q=80" alt="OKU community support"
+              class="carousel-bg" />
+            <div class="carousel-caption">
+              <div class="carousel-caption-inner">
+                <span class="hero-tag">OKU Community Support</span>
+                <h1>Empowering Every<br />Ability, Every Person.</h1>
+                <p>
+                  Supporting individuals with disabilities (OKU) through
+                  targeted aid, equipment assistance, and community programmes.
+                </p>
+                <div class="hero-btn-group">
+                  <a href="campaigns.html" class="btn-hero-primary">Explore Missions</a>
+                  <a href="get-involved.html" class="btn-hero-outline">Volunteer With Us</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-6">
-          <h6 class="footer-heading">Contact Us</h6>
-          <div class="footer-contact-item">
-            <svg class="footer-contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
-              <circle cx="12" cy="10" r="3" />
-            </svg>
-            <span>Kuala Lumpur, Malaysia</span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="stats-strip">
+      <div class="container">
+        <div class="row g-0 justify-content-center">
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <span class="stat-number" data-count="1200" data-suffix="+">0</span>
+              <span class="stat-label">Families Helped</span>
+            </div>
           </div>
-          <div class="footer-contact-item">
-            <svg class="footer-contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-              <polyline points="22,6 12,13 2,6" />
-            </svg>
-            <span>bekindmy@gmail.com</span>
+
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <span class="stat-number" data-count="85" data-suffix="+">0</span>
+              <span class="stat-label">Missions Completed</span>
+            </div>
           </div>
-          <div class="footer-contact-item">
-            <svg class="footer-contact-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
-              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path
-                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.9 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012.81 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l.91-.91a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 15.18v1.74z" />
-            </svg>
-            <span>+60 12-345 6789</span>
+
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <span class="stat-number" data-count="320" data-suffix="+">0</span>
+              <span class="stat-label">Active Volunteers</span>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="stat-item">
+              <span class="stat-number" data-count="5" data-suffix=" States">0</span>
+              <span class="stat-label">States Reached</span>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <hr class="footer-divider" />
+    <section class="mission-section section-pad">
+      <div class="container">
+        <div class="row justify-content-between align-items-end mb-5">
+          <div class="col-lg-6 reveal">
+            <span class="section-label">What We Do</span>
+            <h2 class="section-title">
+              Four Pillars of<br />Our Humanitarian Work
+            </h2>
+          </div>
+          <div class="col-lg-5 reveal">
+            <p class="section-desc">
+              Be Kind Malaysia operates through four focused programmes — each
+              targeting a specific group in need, ensuring aid reaches those who
+              need it most.
+            </p>
+          </div>
+        </div>
 
-      <div class="footer-bottom">
-        <span>&copy; 2026 Be Kind Malaysia</span>
-        <span>Developed for ISP465 — Introduction to Front-End Web
-          Development</span>
+        <div class="row g-4">
+          <div class="col-sm-6 col-lg-3 reveal">
+            <div class="mission-card">
+              <div class="mission-icon">
+                <i data-lucide="cooking-pot"></i>
+              </div>
+              <h4>Food Kit Drive</h4>
+              <p>
+                Distributing monthly food essentials to underprivileged
+                families, ensuring no one goes to bed hungry.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 reveal">
+            <div class="mission-card">
+              <div class="mission-icon">
+                <i data-lucide="ribbon"></i>
+              </div>
+              <h4>Cancer Aid</h4>
+              <p>
+                Providing financial assistance and essential support to cancer
+                patients and their families throughout treatment.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 reveal">
+            <div class="mission-card">
+              <div class="mission-icon">
+                <i data-lucide="accessibility"></i>
+              </div>
+              <h4>OKU Support</h4>
+              <p>
+                Assisting individuals with disabilities through targeted aid,
+                mobility equipment, and community inclusion programmes.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3 reveal">
+            <div class="mission-card">
+              <div class="mission-icon">
+                <i data-lucide="waves"></i>
+              </div>
+              <h4>Flood Relief</h4>
+              <p>
+                Rapid deployment of aid packages, clean water, and volunteer
+                teams to flood-affected communities across Malaysia.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad bg-light-custom">
+      <div class="container">
+        <div class="row align-items-end mb-5">
+          <div class="col-lg-7 reveal">
+            <span class="section-label">Recent Activity</span>
+            <h2 class="section-title">Our Latest Campaigns</h2>
+            <p class="section-desc mt-2">
+              A look at our most recent missions.
+            </p>
+          </div>
+          <div class="col-lg-5 text-lg-end mt-3 mt-lg-0 reveal">
+            <a href="campaigns.html" class="btn-primary-custom">View All Campaigns →</a>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="campaign-card d-flex flex-column h-100">
+              <div class="campaign-img-wrap">
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&q=75"
+                  alt="Food Kit Drive Selangor" loading="lazy" />
+                <span class="campaign-badge">Food Kit Drive</span>
+              </div>
+              <div class="campaign-body d-flex flex-column flex-grow-1">
+                <h5>Selangor Food Kit Distribution — October 2024</h5>
+                <p>
+                  Delivered 250 food kits to underprivileged families in Klang
+                  Valley, covering rice, cooking oil, canned goods, and basic
+                  necessities.
+                </p>
+                <div class="campaign-meta mb-3 d-flex align-items-center gap-1">
+                  <i data-lucide="calendar" style="width: 16px; height: 16px;"></i>
+                  <span>October 12, 2024 &nbsp;·&nbsp; 250 Families Served</span>
+                </div>
+                <div class="mt-auto pt-2">
+                  <button class="btn-primary-custom w-100 text-center" data-bs-toggle="modal"
+                    data-bs-target="#campaignModal1">
+                    View Mission Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="campaign-card d-flex flex-column h-100">
+              <div class="campaign-img-wrap">
+                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=75"
+                  alt="Cancer Aid Mission" loading="lazy" />
+                <span class="campaign-badge badge-amber">Cancer Aid</span>
+              </div>
+              <div class="campaign-body d-flex flex-column flex-grow-1">
+                <h5>Cancer Financial Aid Programme — Q3 2024</h5>
+                <p>
+                  Provided financial assistance to 38 cancer patients for
+                  treatment costs, transportation, and basic living expenses
+                  during hospitalisation.
+                </p>
+                <div class="campaign-meta mb-3 d-flex align-items-center gap-1">
+                  <i data-lucide="calendar" style="width: 16px; height: 16px;"></i>
+                  <span>September 5, 2024 &nbsp;·&nbsp; 38 Patients Assisted</span>
+                </div>
+                <div class="mt-auto pt-2">
+                  <button class="btn-primary-custom w-100 text-center" data-bs-toggle="modal"
+                    data-bs-target="#campaignModal2">
+                    View Mission Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 reveal">
+            <div class="campaign-card d-flex flex-column h-100">
+              <div class="campaign-img-wrap">
+                <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=600&q=75"
+                  alt="Flood Relief Pahang" loading="lazy" />
+                <span class="campaign-badge badge-teal">Flood Relief</span>
+              </div>
+              <div class="campaign-body d-flex flex-column flex-grow-1">
+                <h5>Pahang Flood Relief Mission — November 2024</h5>
+                <p>
+                  Mobilised 45 volunteers to deliver emergency supply packages,
+                  clean water, and hygiene kits to flood-affected families in
+                  Pahang.
+                </p>
+                <div class="campaign-meta mb-3 d-flex align-items-center gap-1">
+                  <i data-lucide="calendar" style="width: 16px; height: 16px;"></i>
+                  <span>November 3, 2024 &nbsp;·&nbsp; 120 Families Reached</span>
+                </div>
+                <div class="mt-auto pt-2">
+                  <button class="btn-primary-custom w-100 text-center" data-bs-toggle="modal"
+                    data-bs-target="#campaignModal3">
+                    View Mission Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal fade" id="campaignModal1" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg" style="border-radius: var(--radius-lg); overflow: hidden">
+          <div class="modal-header border-0 bg-light-custom">
+            <h5 class="modal-title fw-bold text-primary-custom" style="font-family: var(--font-head)">
+              Selangor Food Kit Distribution
+            </h5>
+            <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Every phase of our Food Kit drive focuses on direct-to-home
+              delivery for urban poor B40 households. In October 2024, our teams
+              successfully packed, distributed, and verified dry pantry supplies
+              directly to low-cost housing schemes across Selangor.
+            </p>
+            <p class="mb-0 text-muted small">
+              <strong>Items provided:</strong> 10kg Rice, Cooking Oil, Flour,
+              Condensed Milk, Sugar, Salt, and Canned Protein.
+            </p>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-secondary rounded-3 border-0 py-2 px-3 small" data-bs-dismiss="modal">
+              Close Window
+            </button>
+            <a href="get-involved.html#donate" class="btn-cta-primary m-0 py-2 px-4 rounded-3 text-dark">Support Next
+              Drive</a>
+          </div>
+        </div>
       </div>
     </div>
-  </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script src="main.js"></script>
-</body>
+    <div class="modal fade" id="campaignModal2" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg" style="border-radius: var(--radius-lg); overflow: hidden">
+          <div class="modal-header border-0 bg-light-custom">
+            <h5 class="modal-title fw-bold text-primary-custom" style="font-family: var(--font-head)">
+              Cancer Financial Aid Support
+            </h5>
+            <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Medical treatments shouldn't be cut short because of transport
+              fare or basic nutritional constraints. This quarterly framework
+              covers medical out-of-pocket gaps, chemotherapy co-pays, and
+              continuous food support for outpatients dealing with critical
+              income drops.
+            </p>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-secondary rounded-3 border-0 py-2 px-3 small" data-bs-dismiss="modal">
+              Close Window
+            </button>
+            <a href="get-involved.html#donate" class="btn-cta-primary m-0 py-2 px-4 rounded-3 text-dark">Support Oncology
+              Fund</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="modal fade" id="campaignModal3" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content border-0 shadow-lg" style="border-radius: var(--radius-lg); overflow: hidden">
+          <div class="modal-header border-0 bg-light-custom">
+            <h5 class="modal-title fw-bold text-primary-custom" style="font-family: var(--font-head)">
+              Pahang Flood Relief Deployment
+            </h5>
+            <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              When monsoons strike, rapid logistical intervention saves lives.
+              Our localized volunteer hubs deployment team brought instant clean
+              drinking water containers, medical hygiene packs, and portable
+              cleaning gear to rural homes affected by severe flooding heights.
+            </p>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-secondary rounded-3 border-0 py-2 px-3 small" data-bs-dismiss="modal">
+              Close Window
+            </button>
+            <a href="get-involved.html#donate" class="btn-cta-primary m-0 py-2 px-4 rounded-3 text-dark">Contribute to
+              Relief</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="about-strip section-pad">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 reveal">
+            <span class="section-label" style="color: var(--accent)">Who We Are</span>
+            <h2 class="section-title" style="color: white">
+              A Community Built<br />on Compassion.
+            </h2>
+            <p class="section-desc mt-3" style="color: rgba(255, 255, 255, 0.7); max-width: 100%">
+              Be Kind Malaysia is a grassroots NGO committed to delivering
+              meaningful, transparent humanitarian aid to those most in need —
+              with a focus on cancer patients and individuals with disabilities.
+            </p>
+
+            <ul class="about-list mt-4">
+              <li>
+                100% volunteer-driven operations with transparent fund
+                utilisation
+              </li>
+              <li>
+                Verified aid distribution to cancer patients and OKU individuals
+              </li>
+              <li>Rapid response flood relief across Peninsular Malaysia</li>
+              <li>Open to CSR partnerships and corporate sponsorships</li>
+            </ul>
+
+            <a href="about.html" class="btn-outline-light-custom">Learn More About Us →</a>
+          </div>
+
+          <div class="col-lg-6 reveal">
+            <div class="about-img-wrap">
+              <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800&q=80"
+                alt="Be Kind Malaysia team of volunteers" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 reveal">
+            <h2>You Can Make a Real Difference Today.</h2>
+            <p>
+              Whether you donate, volunteer, or simply spread the word — every
+              action helps us reach more lives across Malaysia.
+            </p>
+            <div>
+              <a href="get-involved.html#donate" class="btn-cta-primary">Donate Now</a>
+              <a href="get-involved.html#volunteer" class="btn-cta-outline">Become a Volunteer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-brand d-flex align-items-center gap-2 mb-3">
+              <img src="images/bekindlogo.png" alt="Be Kind Logo" style="height: 50px; width: auto;" />
+            </div>
+            <p class="footer-desc"> A Malaysian NGO dedicated to delivering transparent, community-driven humanitarian aid to cancer patients, OKU individuals, and underprivileged communities. </p>
+            <div class="footer-social mt-3">
+              <a class="social-btn" href="https://web.facebook.com/BeKindMalaysia" aria-label="Facebook">
+                <svg viewBox="0 0 24 24">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z" />
+                </svg>
+              </a>
+              <a class="social-btn" href="https://www.instagram.com/bekind.malaysia" aria-label="Instagram">
+                <svg viewBox="0 0 24 24">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2" />
+                  <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" fill="none" stroke="currentColor" stroke-width="2" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <h6 class="footer-heading">Contact Us</h6>
+            <div class="footer-contact-item d-flex align-items-center gap-2 mb-2">
+              <i data-lucide="map-pin" class="text-success"></i>
+              <span>Kuala Lumpur, Malaysia</span>
+            </div>
+            <div class="footer-contact-item d-flex align-items-center gap-2 mb-2">
+              <i data-lucide="mail" class="text-success"></i>
+              <span>bekindmalaysiaofficial@gmail.com</span>
+            </div>
+            <div class="footer-contact-item d-flex align-items-center gap-2 mb-2">
+              <i data-lucide="phone" class="text-success"></i>
+              <span>+60 10-360 2330</span>
+            </div>
+          </div>
+        </div>
+
+        <hr class="footer-divider" />
+        <div class="footer-bottom">
+          <span>&copy; 2026 Be Kind Malaysia</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="main.js"></script>
+  </body>
 </html>
