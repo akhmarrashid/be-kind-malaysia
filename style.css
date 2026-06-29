@@ -853,6 +853,12 @@ img {
   display: none !important;
 }
 
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 1050 !important;
+  pointer-events: auto !important;
+}
+
 /*RESPONSIVE*/
 @media (max-width: 991px) {
   .navbar-collapse {
