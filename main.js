@@ -118,4 +118,20 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     }, false);
   }
+
+  /* 8. DYNAMIC MODAL DATA INJECTOR FOR CAMPAIGN*/
+  const campaignModal = document.getElementById('campaignDetailModal');
+  if (campaignModal) {
+    campaignModal.addEventListener('show.bs.modal', function (event) {
+      const clickedCard = event.relatedTarget;
+      
+      const title = clickedCard.getAttribute('data-title');
+      const desc = clickedCard.getAttribute('data-desc');
+      const meta = clickedCard.getAttribute('data-meta');
+      
+      document.getElementById('modalCampaignTitle').textContent = title;
+      document.getElementById('modalCampaignDesc').textContent = desc;
+      document.getElementById('modalCampaignMeta').textContent = meta;
+    });
+  }
 });
