@@ -11,12 +11,9 @@
 
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="images/bekindlogo.png" alt="Be Kind Logo" style="height: 55px; width: auto; margin-right: 10px;">
-        </a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <a class="navbar-brand" href="index.html"><img src="images/bekindlogo.png" alt="Be Kind Logo" style="height: 55px; width: auto; margin-right: 10px;"></a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        
         <div class="collapse navbar-collapse" id="navMenu">
           <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -26,6 +23,15 @@
             <li class="nav-item"><a class="nav-link" href="aid-request.html">Aid Request</a></li>
             <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
             <li class="nav-item ms-lg-2"><a class="nav-link btn-donate-nav" href="get-involved.html#donate">Donate Now</a></li>
+            
+            <li class="nav-item dropdown ms-lg-2 mt-2 mt-lg-0">
+              <button class="btn btn-outline-success rounded-circle p-2 d-flex align-items-center justify-content-center dropdown-toggle no-caret" type="button" id="musicDropdown" data-bs-toggle="dropdown" aria-expanded="false" style="width: 40px; height: 40px;"><i data-lucide="music" style="width: 20px; height: 20px;"></i></button>
+              <div class="dropdown-menu dropdown-menu-end p-3 shadow border-0 mt-2" aria-labelledby="musicDropdown" style="width: 300px; border-radius: 12px;">
+                <h6 class="fw-bold text-success mb-1" style="font-size: 0.9rem;">Angels By My Side</h6>
+                <p class="text-muted mb-2" style="font-size: 0.75rem;">Official Campaign Theme Music</p>
+                <audio controls class="w-100" style="height: 32px;"><source src="audio/thank-you-message.mp3" type="audio/mp3"></audio>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -50,11 +56,10 @@
         </div>
 
         <div class="row g-4" id="portfolioGrid">
-          
           <div class="col-md-6 col-lg-4 portfolio-item" data-category="food">
-            <div class="campaign-card">
+            <div class="campaign-card" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#campaignDetailModal" data-title="Selangor Food Kit Distribution" data-desc="This mission focuses on distributing essential cooking supplies such as rice, oil, flour, and shelf-stable food items specifically for B40 families in PPR housing areas around the Klang Valley to alleviate the burden of living costs." data-meta="📍 Selangor — 250 Homes">
               <div class="campaign-img-wrap">
-                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&q=75" alt="Food Kit Drive Selangor" loading="lazy" />
+                <img src="https://web14.bernama.com/storage/photos/935167c0b10b81ae193026083322dbd36901b9e84b5cb" alt="Food Kit Drive Selangor" loading="lazy" />
                 <span class="campaign-badge">Food Kit Drive</span>
               </div>
               <div class="campaign-body">
@@ -66,9 +71,9 @@
           </div>
 
           <div class="col-md-6 col-lg-4 portfolio-item" data-category="cancer">
-            <div class="campaign-card">
+            <div class="campaign-card" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#campaignDetailModal" data-title="Oncology Outpatient Subsidies" data-desc="A special assistance program for low-income cancer patients to fund commuting costs for chemotherapy treatments, purchasing specialized medical formula milk, and hospital medication support funds." data-meta="📍 Hospital KL — 38 Fighters">
               <div class="campaign-img-wrap">
-                <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=600&q=75" alt="Cancer Aid Mission" loading="lazy" />
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBnakbYfeqKjysFysJeGBVqsHrQhTldy49lOPxJXKVJLiW0qxOWM3Wr50&s=10" alt="Cancer Aid Mission" loading="lazy" />
                 <span class="campaign-badge badge-amber">Cancer Aid</span>
               </div>
               <div class="campaign-body">
@@ -80,9 +85,9 @@
           </div>
 
           <div class="col-md-6 col-lg-4 portfolio-item" data-category="flood">
-            <div class="campaign-card">
+            <div class="campaign-card" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#campaignDetailModal" data-title="Pahang Emergency Flash Floods" data-desc="Immediate deployment of logistics teams along with post-flood cleaning kits, clean water tanks, and sanitation boxes directly to remote village areas severely affected by seasonal flash floods." data-meta="📍 Pahang — 120 Households">
               <div class="campaign-img-wrap">
-                <img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=600&q=75" alt="Flood Relief Pahang" loading="lazy" />
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr9j4YWMwrFnjGIcIwcXn0ENPh6jmv-BT4TSoIkPM3VOgHcJac7-mMdIA&s=10" alt="Flood Relief Pahang" loading="lazy" />
                 <span class="campaign-badge badge-teal">Flood Relief</span>
               </div>
               <div class="campaign-body">
@@ -94,9 +99,9 @@
           </div>
 
           <div class="col-md-6 col-lg-4 portfolio-item" data-category="oku">
-            <div class="campaign-card">
+            <div class="campaign-card" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#campaignDetailModal" data-title="Mobility Equipment Distribution" data-desc="Assisting low-income applicants with physical disabilities by providing, delivering, and fitting specialized wheelchair equipment (standard/pediatric) to facilitate their daily mobility." data-meta="📍 Johor Hub — 15 Recipients">
               <div class="campaign-img-wrap">
-                <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=600&q=75" alt="OKU Wheelchair Drive" loading="lazy" />
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStgnFwXmYJT6YJ63V33ITvrKT2Sr6wRvSVjilxmkzFATGcCk9iGfVu7AAi&s=10" alt="OKU Wheelchair Drive" loading="lazy" />
                 <span class="campaign-badge badge-red">OKU Support</span>
               </div>
               <div class="campaign-body">
@@ -108,9 +113,9 @@
           </div>
 
           <div class="col-md-6 col-lg-4 portfolio-item" data-category="food">
-            <div class="campaign-card">
+            <div class="campaign-card" style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#campaignDetailModal" data-title="Kelantan Rural Food Logistics" data-desc="A specialized logistics mission navigating through remote fishing villages to deliver essential dry staple food supplies to help sustain their livelihood during the monsoon season." data-meta="📍 Kelantan — 180 Families">
               <div class="campaign-img-wrap">
-                <img src="https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=600&q=75" alt="Food Kit Drive Kelantan" loading="lazy" />
+                <img src="https://i.ytimg.com/vi/ZhP_3SYOn-I/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCXafqi6_P48IfTygi6Zy390mLo6A" alt="Food Kit Drive Kelantan" loading="lazy" />
                 <span class="campaign-badge">Food Kit Drive</span>
               </div>
               <div class="campaign-body">
@@ -124,6 +129,27 @@
         </div>
       </div>
     </section>
+    <div class="modal fade" id="campaignDetailModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content" style="border-radius: 12px; border: none;">
+          <div class="modal-header border-0 pb-0">
+            <h5 class="fw-bold text-success" id="modalCampaignTitle">Campaign Details</h5>
+            <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body pt-2">
+            <p id="modalCampaignDesc" class="text-muted small mb-3">Please select a campaign to view more information.</p>
+            <div class="p-3 bg-light rounded border">
+              <span class="d-block small text-secondary fw-semibold">Location & Target:</span>
+              <span id="modalCampaignMeta" class="small text-dark fw-bold">-</span>
+            </div>
+          </div>
+          <div class="modal-footer border-0">
+            <button type="button" class="btn btn-secondary btn-sm rounded-3" data-bs-dismiss="modal">Close</button>
+            <a href="get-involved.html" class="btn-cta-primary m-0 py-2 px-4 rounded-3 text-dark ">Donate Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer class="footer">
       <div class="container">

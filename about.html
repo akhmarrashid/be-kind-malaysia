@@ -8,15 +8,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
+  <body>  
     <nav class="navbar navbar-expand-lg">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="images/bekindlogo.png" alt="Be Kind Logo" style="height: 55px; width: auto; margin-right: 10px;">
-        </a>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <a class="navbar-brand" href="index.html"><img src="images/bekindlogo.png" alt="Be Kind Logo" style="height: 55px; width: auto; margin-right: 10px;"></a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        
         <div class="collapse navbar-collapse" id="navMenu">
           <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
             <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -26,6 +23,15 @@
             <li class="nav-item"><a class="nav-link" href="aid-request.html">Aid Request</a></li>
             <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
             <li class="nav-item ms-lg-2"><a class="nav-link btn-donate-nav" href="get-involved.html#donate">Donate Now</a></li>
+            
+            <li class="nav-item dropdown ms-lg-2 mt-2 mt-lg-0">
+              <button class="btn btn-outline-success rounded-circle p-2 d-flex align-items-center justify-content-center dropdown-toggle no-caret" type="button" id="musicDropdown" data-bs-toggle="dropdown" aria-expanded="false" style="width: 40px; height: 40px;"><i data-lucide="music" style="width: 20px; height: 20px;"></i></button>
+              <div class="dropdown-menu dropdown-menu-end p-3 shadow border-0 mt-2" aria-labelledby="musicDropdown" style="width: 300px; border-radius: 12px;">
+                <h6 class="fw-bold text-success mb-1" style="font-size: 0.9rem;">Angels By My Side</h6>
+                <p class="text-muted mb-2" style="font-size: 0.75rem;">Official Campaign Theme Music</p>
+                <audio controls class="w-100" style="height: 32px;"><source src="audio/thank-you-message.mp3" type="audio/mp3"></audio>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -56,43 +62,65 @@
               <p class="small text-muted mb-0">A collaborative, robust civil network across Peninsular Malaysia where zero basic physiological or clinical recovery needs go ignored due to lack of income.</p>
             </div>
           </div>
-          
+        
           <div class="col-lg-6 reveal">
-            <div class="about-img-wrap">
-              <img src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?w=800&q=80" alt="Community support volunteer session" style="height: 480px; width:100%; object-fit:cover;">
-            </div>
+          <div class="about-img-wrap mb-3">
+            <video controls width="100%" style="border-radius: var(--radius); max-height: 350px;">
+              <source src="video/bekindvolunteer.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
           </div>
+          <p class="text-center">THANK YOU, BEKIND MALAYSIA VOLUNTEERS!</p>
+          <p class="small text-muted text-center">A thousand thanks for the unwavering support of our Bekind Malaysia volunteers who never tire of participating in the programs we organize. You all are truly the best! Thank you for willingly spending your time with the community for our collective well-being, regardless of race and religion. May you all always stay healthy and live a joyful life. Join us again next time, okay?</p>
+        </div>
         </div>
       </div>
     </section>
-
-    <section class="section-pad bg-light-custom">
-      <div class="container text-center mb-5">
-        <h2 class="section-title">The Values Directing Our Assets</h2>
-      </div>
+    <section class="py-5 bg-light-custom border-top">
       <div class="container">
-        <div class="row g-4">
-          <div class="col-md-4 reveal">
-            <div class="card p-4 border-0 h-100 shadow-sm" style="border-radius: var(--radius);">
-              <div class="mb-3"><i data-lucide="gem"></i></div>
-              <h5 class="fw-bold text-primary-custom">Absolute Transparency</h5>
-              <p class="small text-muted mb-0">Every single ringgit collected through our digital pipelines is audited, accounted for, and visually mapped directly to operational campaigns.</p>
-            </div>
-          </div>
-          <div class="col-md-4 reveal">
-            <div class="card p-4 border-0 h-100 shadow-sm" style="border-radius: var(--radius);">
-              <div class="mb-3"><i data-lucide="zap"></i></div>
-              <h5 class="fw-bold text-primary-custom">Rapid Mobilization</h5>
-              <p class="small text-muted mb-0">By keeping our overhead costs at zero, our logistics teams deploy dry food goods, wheelchairs, and tactical flood kits within hours of verification.</p>
-            </div>
-          </div>
-          <div class="col-md-4 reveal">
-            <div class="card p-4 border-0 h-100 shadow-sm" style="border-radius: var(--radius);">
-              <div class="mb-3"><i data-lucide="heart-handshake"></i></div>
-              <h5 class="fw-bold text-primary-custom">Inclusivity Always</h5>
-              <p class="small text-muted mb-0">We assist purely based on socio-economic vulnerability indicators, bypassing race, religion, background, or geographic boundaries.</p>
-            </div>
-          </div>
+        <div class="text-center mb-4">
+          <span class="section-label justify-content-center">Operational Schedule</span>
+          <h2 class="fw-bold text-success text-center">Monthly Aid Distribution Zones</h2>
+          <p class="text-muted small mx-auto" style="max-width: 500px;">Below is the collection and delivery schedule for supplies by state for this phase.</p>
+        </div>
+
+        <div class="table-responsive" style="max-width: 800px; margin: 0 auto;">
+          <table class="table table-hover table-bordered align-middle">
+            <thead class="table-success text-dark">
+              <tr>
+                <th scope="col" style="width: 25%;">Aid Category</th>
+                <th scope="col" style="width: 30%;">Focus Area</th>
+                <th scope="col" style="width: 25%;">Operating Days</th>
+                <th scope="col" style="width: 20%;">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="fw-semibold">Food Kit Drive</td>
+                <td>Klang Valley PPR, Selangor</td>
+                <td>Every Saturday</td>
+                <td><span class="badge bg-success">Active</span></td>
+              </tr>
+              <tr>
+                <td class="fw-semibold">Cancer Aid Support</td>
+                <td>Kuala Lumpur Hospital (HKL)</td>
+                <td>Wednesday & Thursday</td>
+                <td><span class="badge bg-success">Active</span></td>
+              </tr>
+              <tr>
+                <td class="fw-semibold">OKU Mobility Gear</td>
+                <td>Johor Bahru Logistics Hub</td>
+                <td>End of the Month</td>
+                <td><span class="badge bg-secondary">Scheduled</span></td>
+              </tr>
+              <tr>
+                <td class="fw-semibold">Flood Relief Kit</td>
+                <td>East Coast Region (Pahang)</td>
+                <td>24/7 Readiness</td>
+                <td><span class="badge bg-danger">Standby</span></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </section>
